@@ -1,4 +1,5 @@
 import React from "react";
+import { projects } from "../../data";
 import Project from "../project/Project";
 import "./projectList.css";
 
@@ -10,7 +11,8 @@ const ProjectList = () => {
         <p className="project-list-description">Description:</p>
       </div>
       <div className="project-list-list">
-        <Project />
+        {/* {projects.map(project=>(<Project />))} */}
+        {/* <Project key={project.id} img={projects.image} link="https://github.com/JazzPants"/> */}
         <Project />
         <Project />
         <Project />
