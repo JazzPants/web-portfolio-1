@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import RamenIcon from "../../svg/ramenIcon";
 
 const About = () => {
   //SHORTCUT: .about-right -> <div className="about-right"></div>
@@ -16,7 +17,21 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="about-right"></div>
+      <div className="about-right">
+        <h1 className="about-title">About Me</h1>
+        <p className="about-subtitle">123456</p>
+        <p className="about-description">Lorem</p>
+        <h2>Things I love:</h2>
+        <div className="about-flavour">
+          <div className="about-flavour-image">
+            <RamenIcon />
+          </div>
+          <div className="about-flavour-text">
+            <h2>Things I love:</h2>
+            <p>Ramen, Drums, Cars, Gaming </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
