@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "leighton-s-web-portfolio"
-  }
+    "default": "leighton-s-web-portfolio",
+    "web-portfolio-1st": "web-portfolio-3b812"
+  },
+  "targets": {}
 }
