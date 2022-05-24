@@ -1,6 +1,7 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { ThemeContext } from "../../context";
 // import PhoneIcon from "../../svg/PhoneIcon";
 // import Addressfrom "../../svg/AddressIcon";
 // import Email from "../../svg/EmailIcon";
@@ -16,6 +17,9 @@ const Contact = () => {
   const [done, setDone] = useState(false);
   const [sending, setSending] = useState(false);
   const [buttonText, setButtonText] = useState("Submit");
+
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -68,10 +72,43 @@ const Contact = () => {
             you have! Get in touch with me!
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea rows="5" placeholder="Message" name="message" />
+            <input
+              style={{
+                backgroundColor: darkMode && "rgb(37, 37, 37)",
+                borderBottom: darkMode && "1px solid white",
+              }}
+              type="text"
+              placeholder="Name"
+              name="user_name"
+            />
+            <input
+              style={{
+                backgroundColor: darkMode && "rgb(37, 37, 37)",
+                borderBottom: darkMode && "1px solid white",
+              }}
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+            />
+            <input
+              style={{
+                backgroundColor: darkMode && "rgb(37, 37, 37)",
+                border: "none",
+                borderBottom: darkMode && "1px solid white",
+              }}
+              type="text"
+              placeholder="Email"
+              name="user_email"
+            />
+            <textarea
+              style={{
+                backgroundColor: darkMode && "rgb(37, 37, 37)",
+                border: darkMode && "1px solid white",
+              }}
+              rows="5"
+              placeholder="Message"
+              name="message"
+            />
             <button>{buttonText}</button>
             {done && (
               <p>

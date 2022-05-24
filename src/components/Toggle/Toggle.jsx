@@ -14,12 +14,11 @@ const Toggle = () => {
   };
 
   return (
-    <div className="toggle">
+    <div className="toggle" onClick={handleClick}>
       <img src="" alt="" className="toggle-icon" />
       <img src="" alt="" className="toggle-icon" />
       <div
         className="toggle-button"
-        onClick={handleClick}
         style={{ left: theme.state.darkMode ? 0 : 25 }}
       ></div>
     </div>
