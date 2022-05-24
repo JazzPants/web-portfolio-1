@@ -29,6 +29,7 @@
 
 .contact-title{
     width: 60%;
+    font-size: 40px;
 }
 
 .contact-info-item{
@@ -73,3 +74,40 @@ button{
     cursor: pointer;
     font-weight: 750;
 }
+
+@media screen and (max-width: 480px) {
+    .contact-wrapper{
+      flex-direction: column;
+      padding: 0px 50px;
+    }
+
+    .contact-title{
+        font-size: 30px;
+    }
+
+    .contact-info-item{
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .contact-description{
+        display: none;
+    }
+    
+    form {
+        margin-top: 0;
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    input {
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+    button{
+        margin-top: 10px;
+    }
+  }

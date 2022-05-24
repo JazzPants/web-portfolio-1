@@ -79,3 +79,26 @@ justify-content: space-evenly;
     width: 50%;
     color: grey;
 }
+
+@media screen and (max-width: 480px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about-left{
+        width: 100%;
+    }
+
+    .about-card {
+        height: 30vh;
+    }
+    .about-card.background{
+        display:none;
+    }
+
+    .about-right{
+        padding:20px;
+    }
+}

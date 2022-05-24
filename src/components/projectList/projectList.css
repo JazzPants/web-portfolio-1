@@ -8,7 +8,6 @@
 
 .project-list-text{
     width: 65%;
-    border: solid;
 }
 
 .project-list-title{
@@ -25,4 +24,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+
+@media screen and (max-width: 480px) {
+    .project-list{
+        padding: 10px;
+    }
+
+    .project-list-text{
+        width: 100%;
+    }
+
+    .project-list-description{
+        display:none;
+    }
 }
