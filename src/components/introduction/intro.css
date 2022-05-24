@@ -101,7 +101,7 @@
 .introduction-border {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 
-  background-color: red;
+  background-color: rgb(0, 150, 142);
 
   height: 100%;
   width: 100%;
