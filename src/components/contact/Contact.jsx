@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <div className="contact-background"></div>
       <div className="contact-wrapper">
         <div className="contact-left">
