@@ -52,6 +52,7 @@ const Contact = () => {
         <div className="contact-left">
           <h1 className="contact-title">Let's discuss your project.</h1>
           <div className="contact-info">
+            LinkedIn, Github, Resume, Band Page
             <div className="contact-info-item">
               <img src="" alt="" className="contact-icon" />
               123 1234 1234

@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact";
 import Toggle from "./components/Toggle/Toggle";
 import { useContext } from "react";
 import { ThemeContext } from "./context";
+import TechSkills from "./components/techSkills/TechSkills";
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -20,6 +21,7 @@ const App = () => {
     >
       <Toggle></Toggle>
       <Intro></Intro>
+      <TechSkills></TechSkills>
       <About></About>
       <ProjectList></ProjectList>
       <Contact></Contact>

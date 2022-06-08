@@ -1,0 +1,18 @@
+.techskills {
+    display: flex;
+    height: 100vh;
+  }
+  
+
+  .techskills-wrapper{
+    padding: 50px;
+    display: flex;
+}
+
+.techskills-left{
+    flex: 1;
+}
+
+.techskills-right{
+    flex: 1;
+}
