@@ -27,9 +27,7 @@ const App = () => {
       }}
     >
       <NavBar></NavBar>
-      <Button variant="outlined" onClick={handleScrollToContact}>
-        to contact form!
-      </Button>
+
       <Toggle></Toggle>
       <Intro></Intro>
       <TechSkills></TechSkills>
