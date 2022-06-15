@@ -6,7 +6,7 @@ const About = () => {
   //SHORTCUT: .about-right -> <div className="about-right"></div>
   //img.about-image
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-left">
         <div className="about-card background"></div>
         <div className="about-card">

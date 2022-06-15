@@ -4,8 +4,8 @@
     border-radius: 20px;
     border: 2px solid white;
     background-color: white;
-    position: sticky;
-    top: 10px;
+    position: absolute;
+    top: 75px;
     right: 10px;
     z-index: 99;
     display: flex;

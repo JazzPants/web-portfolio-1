@@ -42,18 +42,31 @@ export default function TemporaryDrawer() {
     setState({ ...state, ["left"]: open });
   };
 
-  const handleScrollToIntro = () => {};
+  const handleScrollToIntro = () => {
+    // const anchor = document.querySelector("#introduction-background");
+    // anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-  const handleScrollToTechSkills = () => {};
+  const handleScrollToTechSkills = () => {
+    const anchor = document.querySelector("#techskills");
+    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
 
-  const handleScrollToAbout = () => {};
+  const handleScrollToAbout = () => {
+    const anchor = document.querySelector("#about");
+    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
 
-  const handleScrollToProjects = () => {};
+  const handleScrollToProjects = () => {
+    const anchor = document.querySelector("#project-list");
+    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
 
   const handleScrollToContact = () => {
     const anchor = document.querySelector("#contact");
     anchor.scrollIntoView({ behavior: "smooth", block: "center" });
-    toggleDrawer("left", false);
+    // toggleDrawer("left", false);
   };
 
   // const handleContact = () => {
@@ -98,7 +111,10 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      <AppBar position="fixed">
+      <AppBar
+        position="fixed"
+        sx={{ backgroundColor: "#00968e80", color: "#00968e" }}
+      >
         <Toolbar>
           <IconButton
             size="large"
