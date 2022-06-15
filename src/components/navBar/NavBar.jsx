@@ -42,6 +42,14 @@ export default function TemporaryDrawer() {
     setState({ ...state, ["left"]: open });
   };
 
+  const handleScrollToIntro = () => {};
+
+  const handleScrollToTechSkills = () => {};
+
+  const handleScrollToAbout = () => {};
+
+  const handleScrollToProjects = () => {};
+
   const handleScrollToContact = () => {
     const anchor = document.querySelector("#contact");
     anchor.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -112,8 +120,71 @@ export default function TemporaryDrawer() {
         anchor={"left"}
         open={state["left"]}
         onClose={toggleDrawer("left", false)}
+        PaperProps={{ style: { width: 200 } }}
       >
         <Divider />
+        {/* {["All mail", "Trash", "Spam"].map((text, index) => (
+          <Box onClick={`scrollTo${text}`} key={index}>
+            {text}
+          </Box>
+        ))} */}
+
+        <Box onClick={handleScrollToIntro}>
+          <div>
+            <List>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>icon</ListItemIcon>
+                  <ListItemText>Intro</ListItemText>
+                </ListItemButton>
+              </ListItem>
+            </List>
+          </div>
+        </Box>
+        <Divider />
+
+        <Box onClick={handleScrollToTechSkills}>
+          <div>
+            <List>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>icon</ListItemIcon>
+                  <ListItemText>Tech Skills</ListItemText>
+                </ListItemButton>
+              </ListItem>
+            </List>
+          </div>
+        </Box>
+        <Divider />
+
+        <Box onClick={handleScrollToAbout}>
+          <div>
+            <List>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>icon</ListItemIcon>
+                  <ListItemText>About</ListItemText>
+                </ListItemButton>
+              </ListItem>
+            </List>
+          </div>
+        </Box>
+        <Divider />
+
+        <Box onClick={handleScrollToProjects}>
+          <div>
+            <List>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>icon</ListItemIcon>
+                  <ListItemText>Projects</ListItemText>
+                </ListItemButton>
+              </ListItem>
+            </List>
+          </div>
+        </Box>
+        <Divider />
+
         <Box onClick={handleScrollToContact}>
           <div>
             <List>
