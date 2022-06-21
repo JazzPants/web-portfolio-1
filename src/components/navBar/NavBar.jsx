@@ -16,6 +16,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
+
 //TODO: make Menu Drawer appear UNDER the NavBar
 // const styles = (theme) => ({
 //   appBar: {
@@ -30,6 +33,9 @@ export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
     left: false,
   });
+
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -113,7 +119,7 @@ export default function TemporaryDrawer() {
     <div>
       <AppBar
         position="fixed"
-        sx={{ backgroundColor: "#00968e80", color: "#00968e" }}
+        sx={{ backgroundColor: "#00968e80", color: "white" }}
       >
         <Toolbar>
           <IconButton
@@ -122,13 +128,13 @@ export default function TemporaryDrawer() {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
+            onClick={toggleDrawer("left", true)}
           >
-            <MenuIcon onClick={toggleDrawer("left", true)} />
+            <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Menu
           </Typography>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
 

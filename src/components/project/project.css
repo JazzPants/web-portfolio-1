@@ -7,6 +7,15 @@
     overflow: hidden;
 }
 
+.project-still {
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
 .project-browser{
     height:20px;
     background-color: rgb(138, 169, 255);
@@ -27,6 +36,10 @@
 .project-image{
     width: 100%;
     transition: all 10s ease;
+}
+
+.project-still-image {
+    width: 100%;
 }
 
 .project:hover .project-image{

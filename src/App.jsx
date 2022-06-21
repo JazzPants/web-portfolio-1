@@ -15,10 +15,6 @@ const App = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
-  const handleScrollToContact = () => {
-    const anchor = document.querySelector("#contact");
-    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
-  };
   return (
     <div
       style={{
@@ -30,7 +26,7 @@ const App = () => {
 
       <Toggle></Toggle>
       <Intro></Intro>
-      <TechSkills></TechSkills>
+      {/* <TechSkills></TechSkills> */}
       <About></About>
       <ProjectList></ProjectList>
       <Contact></Contact>

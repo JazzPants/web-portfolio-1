@@ -2,6 +2,8 @@ import { useRef, useState, useContext } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
+import LinkedInIcon from "../../svg/linkedInIcon";
+import GitHubIcon from "../../svg/gitHubIcon";
 // import PhoneIcon from "../../svg/PhoneIcon";
 // import Addressfrom "../../svg/AddressIcon";
 // import Email from "../../svg/EmailIcon";
@@ -52,18 +54,30 @@ const Contact = () => {
         <div className="contact-left">
           <h1 className="contact-title">Let's discuss your project.</h1>
           <div className="contact-info">
-            LinkedIn, Github, Resume, Band Page
+            <a
+              style={{ color: darkMode && "white" }}
+              href="https://www.linkedin.com/in/leighton-lam/"
+            >
+              <div className="contact-info-item">
+                <div className="contact-item">
+                  <LinkedInIcon />
+                </div>
+                LinkedIn
+              </div>
+            </a>
+            <a
+              style={{ color: darkMode && "white" }}
+              href="https://github.com/JazzPants"
+            >
+              <div className="contact-info-item">
+                <div className="contact-item">
+                  <GitHubIcon />
+                </div>
+                Github
+              </div>
+            </a>
             <div className="contact-info-item">
-              <img src="" alt="" className="contact-icon" />
-              123 1234 1234
-            </div>
-            <div className="contact-info-item">
-              <img src="" alt="" className="contact-icon" />
-              email:
-            </div>
-            <div className="contact-info-item">
-              <img src="" alt="" className="contact-icon" />
-              address:
+              <div className="contact-item"></div> Resume
             </div>
           </div>
         </div>
