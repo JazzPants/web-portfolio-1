@@ -165,7 +165,7 @@ export default function TemporaryDrawer() {
         </Box>
         <Divider />
 
-        <Box onClick={handleScrollToTechSkills}>
+        {/* <Box onClick={handleScrollToTechSkills}>
           <div>
             <List>
               <ListItem disablePadding>
@@ -177,7 +177,7 @@ export default function TemporaryDrawer() {
             </List>
           </div>
         </Box>
-        <Divider />
+        <Divider /> */}
 
         <Box onClick={handleScrollToAbout}>
           <div>

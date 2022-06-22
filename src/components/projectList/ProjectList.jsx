@@ -80,7 +80,7 @@ const ProjectList = () => {
             <img src={budgets} alt="" className="project-still-image" />
           </a>
         </div>
-        <div className="project-still">
+        {/* <div className="project-still">
           <div className="project-browser">
             <div className="project-circle"></div>
             <div className="project-circle"></div>
@@ -97,7 +97,7 @@ const ProjectList = () => {
               className="project-still-image"
             />
           </a>
-        </div>
+        </div> */}
         <div className="project">
           <div className="project-browser">
             <div className="project-circle"></div>

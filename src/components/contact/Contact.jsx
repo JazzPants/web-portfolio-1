@@ -76,9 +76,9 @@ const Contact = () => {
                 Github
               </div>
             </a>
-            <div className="contact-info-item">
+            {/* <div className="contact-info-item">
               <div className="contact-item"></div> Resume
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="contact-right">

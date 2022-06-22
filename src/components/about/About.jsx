@@ -20,9 +20,13 @@ const About = () => {
       </div>
       <div className="about-right">
         <h1 className="about-title">About Me</h1>
-        <p className="about-subtitle">123456</p>
-        <p className="about-description">Lorem</p>
-        <h2>Things I love:</h2>
+        <p className="about-subtitle">
+          I'm a highly motivated, self-driven person, eager to learn new things
+          everyday. I'm willing to put 200% into every goal and love
+          collaborating with people to create a product of the highest quality.
+        </p>
+        {/* <p className="about-description">Lorem</p> */}
+        {/* <h2>Things I love:</h2>
         <div className="about-flavour">
           <div className="about-flavour-image">
             <RamenIcon />
@@ -31,7 +35,7 @@ const About = () => {
             <h2>Things I love:</h2>
             <p>Ramen, Drums, Cars, Gaming </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
