@@ -4,9 +4,10 @@ import Project from "../project/Project";
 import "./projectList.css";
 import ecommerceWebsite from "../../img/ecommercewebsite.png";
 import jazzpantsio from "../../img/jazzpantsio.png";
-import snakegame from "../../img/snakegame.png";
+// import snakegame from "../../img/snakegame.png";
 import hungrynow from "../../img/hungrynow.png";
 import budgets from "../../img/budgets.png";
+import snakegame from "../../img/jssnakegame.gif";
 
 const ProjectList = () => {
   return (

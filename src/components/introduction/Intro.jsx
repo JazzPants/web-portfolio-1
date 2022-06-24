@@ -4,8 +4,11 @@ import "./intro.css";
 // import Avatar1 from "../../img/Avatar1-magicbrush.png";
 import Me from "../../img/Avatar1.png";
 // import { ReactComponent as svgScroll } from "./";
+import { useState } from "react";
 
 const Intro = () => {
+  //mouse button stroke colour for dark/light mode
+  const [strokeColour, setStrokeColour] = useState("red");
   return (
     <div id="introduction" className="introduction">
       <div className="introduction-left">
@@ -35,7 +38,7 @@ const Intro = () => {
           version="1.1"
           viewBox="0 0 214.311 214.311"
           xmlSpace="preserve"
-          stroke="black"
+          stroke={strokeColour}
           className="introduction-scroll"
         >
           <path d="M134.455 0H79.857C56.236 0 37.018 19.228 37.018 42.862V146.121c0 37.599 30.594 68.19 68.197 68.19h3.881c37.603 0 68.197-30.59 68.197-68.19V42.862C177.294 19.228 158.076 0 134.455 0zM44.811 42.862c0-19.338 15.721-35.069 35.046-35.069h54.597c19.325 0 35.046 15.731 35.046 35.069v35.069H44.811V42.862zm124.69 103.259c0 33.303-27.097 60.397-60.404 60.397h-3.881c-33.307 0-60.404-27.093-60.404-60.397V85.724h124.689v60.397z"></path>
