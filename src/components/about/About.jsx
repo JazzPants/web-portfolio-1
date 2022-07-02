@@ -6,6 +6,10 @@ const About = () => {
   //SHORTCUT: .about-right -> <div className="about-right"></div>
   //img.about-image
   //to-do: icon/font change on darkmode toggle
+
+  // padding-left: 20%;
+  // padding-right: 20%;
+  // padding-top: 50px;
   return (
     <div className="about" id="about">
       <div className="about-left">

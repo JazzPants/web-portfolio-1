@@ -26,7 +26,7 @@ const App = () => {
 
       <Toggle></Toggle>
       <Intro></Intro>
-      {/* <TechSkills></TechSkills> */}
+      <TechSkills></TechSkills>
       <About></About>
       <ProjectList></ProjectList>
       <Contact></Contact>

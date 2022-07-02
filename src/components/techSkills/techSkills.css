@@ -5,14 +5,33 @@
   
 
   .techskills-wrapper{
-    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    width:50%;
+    text-align: center;
+}
+
+.techskills-item{
+    margin: 5%;
+    border-style: solid;
     display: flex;
+
+    justify-content: space-between;
 }
 
-.techskills-left{
-    flex: 1;
+
+.techskills-item-icon{
+    margin-left: 20%;
+    width: 30px;
+    height: 30px;
 }
 
-.techskills-right{
-    flex: 1;
+.techskills-item-text{
+    margin-right: 20%;
+    padding-top: 1%;
+}
+
+.techskills-title {
+    font-size: 30px;
 }
