@@ -4,7 +4,6 @@ import Intro from "./components/introduction/Intro";
 import About from "./components/about/About";
 import ProjectList from "./components/projectList/ProjectList";
 import Contact from "./components/contact/Contact";
-import Toggle from "./components/Toggle/Toggle";
 import { useContext } from "react";
 import { ThemeContext } from "./context";
 import TechSkills from "./components/techSkills/TechSkills";
