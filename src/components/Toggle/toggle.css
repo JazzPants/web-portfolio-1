@@ -3,7 +3,7 @@
     height: 25px;
     border-radius: 20px;
     border: 2px solid white;
-    background-color: white;
+    background-color: rgb(0, 150, 142);
     position: absolute;
     top: 20px;
     right: 10px;
@@ -23,7 +23,7 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #999;
+    background-color: rgb(107, 107, 107);
     position:absolute;
 }
 
