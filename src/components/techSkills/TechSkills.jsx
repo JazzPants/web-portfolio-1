@@ -16,6 +16,7 @@ const TechSkills = () => {
           <h1>Technical Skills</h1>
         </div>
         <div className="techskills-icons-wrapper">
+          <h3>Front-End</h3>
           <div className="techskills-item">
             <div className="techskills-item-icon">
               <SkeletonIcon fill={darkMode ? "white" : "red"} />

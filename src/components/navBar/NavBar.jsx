@@ -18,7 +18,8 @@ import Typography from "@mui/material/Typography";
 
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
-
+// import Toggle from "./components/Toggle/Toggle";
+import Toggle from "../Toggle/Toggle";
 //TODO: make Menu Drawer appear UNDER the NavBar
 // const styles = (theme) => ({
 //   appBar: {
@@ -135,6 +136,7 @@ export default function TemporaryDrawer() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Menu
           </Typography>
+          <Toggle />
         </Toolbar>
       </AppBar>
 

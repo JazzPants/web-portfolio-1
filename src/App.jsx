@@ -23,8 +23,6 @@ const App = () => {
       }}
     >
       <NavBar></NavBar>
-
-      <Toggle></Toggle>
       <Intro></Intro>
       <TechSkills></TechSkills>
       <About></About>

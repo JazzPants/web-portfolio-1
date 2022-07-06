@@ -3,6 +3,9 @@
     height: 100vh;
   }
   
+  .techskills-icons-wrapper{
+    border-style: dotted;
+  }
 
   .techskills-wrapper{
     margin-left: auto;
@@ -29,7 +32,10 @@
 
 .techskills-item-text{
     margin-right: 20%;
-    padding-top: 1%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px dashed #f69c55;
 }
 
 .techskills-title {
