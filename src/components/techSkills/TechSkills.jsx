@@ -11,33 +11,60 @@ const TechSkills = () => {
   const darkMode = theme.state.darkMode;
   return (
     <div className="techskills" id="techskills">
+      <div className="techskills-title">
+        <h1>Technical Skills</h1>
+      </div>
       <div className="techskills-wrapper">
-        <div className="techskills-title">
-          <h1>Technical Skills</h1>
-        </div>
-        <div className="techskills-icons-wrapper">
+        <div className="techskills-icons-wrapper-left">
           <h3>Front-End</h3>
           <div className="techskills-item">
             <div className="techskills-item-icon">
-              <SkeletonIcon fill={darkMode ? "white" : "red"} />
+              <SkeletonIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
             </div>
             <div className="techskills-item-text">HTML</div>
           </div>
           <div className="techskills-item">
             <div className="techskills-item-icon">
-              <SuitIcon fill={darkMode ? "white" : "red"} />
+              <SuitIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
             </div>
             <div className="techskills-item-text">CSS</div>
           </div>
           <div className="techskills-item">
             <div className="techskills-item-icon">
-              <MuscleIcon fill={darkMode ? "white" : "red"} />
+              <MuscleIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
             </div>
             <div className="techskills-item-text">Javascript</div>
           </div>
           <div className="techskills-item">
             <div className="techskills-item-icon">
-              <LibraryIcon fill={darkMode ? "white" : "red"} />
+              <LibraryIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
+            </div>
+            <div className="techskills-item-text">React</div>
+          </div>
+        </div>
+        <div className="techskills-icons-wrapper-right">
+          <h3>Back-End</h3>
+          <div className="techskills-item">
+            <div className="techskills-item-icon">
+              <SkeletonIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
+            </div>
+            <div className="techskills-item-text">HTML</div>
+          </div>
+          <div className="techskills-item">
+            <div className="techskills-item-icon">
+              <SuitIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
+            </div>
+            <div className="techskills-item-text">CSS</div>
+          </div>
+          <div className="techskills-item">
+            <div className="techskills-item-icon">
+              <MuscleIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
+            </div>
+            <div className="techskills-item-text">Javascript</div>
+          </div>
+          <div className="techskills-item">
+            <div className="techskills-item-icon">
+              <LibraryIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
             </div>
             <div className="techskills-item-text">React</div>
           </div>
