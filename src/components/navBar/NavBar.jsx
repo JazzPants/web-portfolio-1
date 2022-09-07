@@ -1,4 +1,5 @@
 import * as React from "react";
+// import "./navBar.css";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -15,6 +16,9 @@ import AppBar from "@mui/material/AppBar";
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import HomeIcon from "../../svg/homeIcon";
+import AboutMeIcon from "../../svg/aboutMeIcon";
+import LinkedInIcon from "../../svg/linkedInIcon";
 
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
@@ -158,7 +162,9 @@ export default function TemporaryDrawer() {
             <List>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <ListItemIcon>icon</ListItemIcon>
+                  <ListItemIcon>
+                    <HomeIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
+                  </ListItemIcon>
                   <ListItemText>Intro</ListItemText>
                 </ListItemButton>
               </ListItem>
@@ -186,7 +192,9 @@ export default function TemporaryDrawer() {
             <List>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <ListItemIcon>icon</ListItemIcon>
+                  <ListItemIcon>
+                    <AboutMeIcon />
+                  </ListItemIcon>
                   <ListItemText>About</ListItemText>
                 </ListItemButton>
               </ListItem>

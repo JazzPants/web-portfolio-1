@@ -1,6 +1,6 @@
 import React from "react";
 
-function Icon({ fill, stroke }) {
+function LibraryIcon({ fill, stroke }) {
   return (
     <svg
       fill={fill}
@@ -18,4 +18,4 @@ function Icon({ fill, stroke }) {
   );
 }
 
-export default Icon;
+export default LibraryIcon;

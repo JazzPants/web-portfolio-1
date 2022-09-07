@@ -23,7 +23,7 @@ const App = () => {
     >
       <NavBar></NavBar>
       <Intro></Intro>
-      {/* <TechSkills></TechSkills> */}
+      <TechSkills></TechSkills>
       <About></About>
       <ProjectList></ProjectList>
       <Contact></Contact>
