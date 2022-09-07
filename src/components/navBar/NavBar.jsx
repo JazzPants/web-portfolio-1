@@ -18,7 +18,8 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import HomeIcon from "../../svg/homeIcon";
 import AboutMeIcon from "../../svg/aboutMeIcon";
-import LinkedInIcon from "../../svg/linkedInIcon";
+import ProjectsIcon from "../../svg/projectsIcon";
+import ContactIcon from "../../svg/contactIcon";
 
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
@@ -208,7 +209,9 @@ export default function TemporaryDrawer() {
             <List>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <ListItemIcon>icon</ListItemIcon>
+                  <ListItemIcon>
+                    <ProjectsIcon />
+                  </ListItemIcon>
                   <ListItemText>Projects</ListItemText>
                 </ListItemButton>
               </ListItem>
@@ -222,7 +225,9 @@ export default function TemporaryDrawer() {
             <List>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <ListItemIcon>icon</ListItemIcon>
+                  <ListItemIcon>
+                    <ContactIcon />
+                  </ListItemIcon>
                   <ListItemText>Contact</ListItemText>
                 </ListItemButton>
               </ListItem>
