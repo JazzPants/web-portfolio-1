@@ -48,25 +48,19 @@ const TechSkills = () => {
             <div className="techskills-item-icon">
               <SkeletonIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
             </div>
-            <div className="techskills-item-text">HTML</div>
+            <div className="techskills-item-text">Ruby on Rails</div>
           </div>
           <div className="techskills-item">
             <div className="techskills-item-icon">
               <SuitIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
             </div>
-            <div className="techskills-item-text">CSS</div>
+            <div className="techskills-item-text">SQLite</div>
           </div>
           <div className="techskills-item">
             <div className="techskills-item-icon">
               <MuscleIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
             </div>
-            <div className="techskills-item-text">Javascript</div>
-          </div>
-          <div className="techskills-item">
-            <div className="techskills-item-icon">
-              <LibraryIcon fill={darkMode ? "white" : "rgb(0, 150, 142)"} />
-            </div>
-            <div className="techskills-item-text">React</div>
+            <div className="techskills-item-text">MongoDB</div>
           </div>
         </div>
       </div>
